@@ -121,6 +121,7 @@ body {
   opacity: 0.8;
 }
 .blog-slider__img img {
+  object-fit: cover;
     width: 80%;
     height:50%;
   display: inline-block;
@@ -201,6 +202,10 @@ body {
   text-align: center;
   letter-spacing: 1px;
 }
+.blog-slider__button:hover{
+  text-decoration: none;
+  color: #fff;
+}
 @media screen and (max-width: 576px) {
   .blog-slider__button {
     width: 100%;
@@ -262,3 +267,5 @@ body {
     width: 30px;
   }
 }
+
+
