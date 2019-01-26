@@ -27,6 +27,34 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" type="text/css" rel="stylesheet">
     <script src="https://apis.mapmyindia.com/advancedmaps/v1/k34g9v8eb36x5fcowy55yi23vhox6gxp/map_load?v=01."></script>
     <style>
+        #preloader  {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #000000;
+            z-index: 999;
+            height: 100%;
+         }
+         .loading {
+          overflow: hidden;
+          height: 100vh;
+        }
+        #status  {
+          width: 300px;
+          height: 300px;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%,-50%);
+          background-image: url(../img/loader.gif);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+          /* background-attachment: fixed; */
+          /* margin: -100px 0 0 -100px; */
+         }
     
     .swiper-container {
       width: 100%;
@@ -65,7 +93,11 @@
 
   </head>
 
-  <body id="page-top">
+  <body id="page-top" class="loading">
+
+    <div id="preloader">
+      <div id="status">&nbsp;</div>
+    </div>
 
     <!-- Navigation -->
     <a class="menu-toggle rounded" href="#">
@@ -150,23 +182,25 @@
 
 </div>
 
+<section style="background: rgba(99, 112, 172, 0.678)">
 <div class="container">
-  <h1>our events</h1>
+  <h1>OUT EVENTS</h1>
 <div class="swiper-container">
     <div class="swiper-wrapper">
-        <div  class="swiper-slide" style="background: url(img/posters/post1.jpeg) center no-repeat; background-size: contain; height: 80vh;"></div>
-        <div  class="swiper-slide" style="background: url(img/posters/post2.jpeg) center no-repeat; background-size: contain;  height: 80vh;"></div>
-        <div  class="swiper-slide" style="background: url(img/posters/post3.jpeg) center no-repeat; background-size: contain;  height: 80vh;"></div>
-        <div  class="swiper-slide" style="background: url(img/posters/post4.jpeg) center no-repeat; background-size: contain;  height: 80vh;"></div>
-        <div  class="swiper-slide" style="background: url(img/posters/post5.jpg) center no-repeat; background-size: contain; height: 80vh;"></div>
-        <div  class="swiper-slide" style="background: url(img/posters/post6.jpg) center no-repeat; background-size: contain;  height: 80vh;"></div>
-        <div  class="swiper-slide" style="background: url(img/posters/post7.jpg) center no-repeat; background-size: contain;  height: 80vh;"></div>
-        <div  class="swiper-slide" style="background: url(img/posters/post8.jpg) center no-repeat; background-size: contain;  height: 80vh;"></div>
+        <div  class="swiper-slide" style="background: url(img/posters/post1.jpeg) rgba(5, 5, 5, 0.616) center no-repeat; background-size: contain; height: 80vh;"></div>
+        <div  class="swiper-slide" style="background: url(img/posters/post2.jpeg) rgba(5, 5, 5, 0.616)  center no-repeat; background-size: contain;  height: 80vh;"></div>
+        <div  class="swiper-slide" style="background: url(img/posters/post3.jpeg) rgba(5, 5, 5, 0.616)  center no-repeat; background-size: contain;  height: 80vh;"></div>
+        <div  class="swiper-slide" style="background: url(img/posters/post4.jpeg) rgba(5, 5, 5, 0.616)  center no-repeat; background-size: contain;  height: 80vh;"></div>
+        <div  class="swiper-slide" style="background: url(img/posters/post5.jpg) rgba(5, 5, 5, 0.616)  center no-repeat; background-size: contain; height: 80vh;"></div>
+        <div  class="swiper-slide" style="background: url(img/posters/post6.jpg) rgba(5, 5, 5, 0.616)  center no-repeat; background-size: contain;  height: 80vh;"></div>
+        <div  class="swiper-slide" style="background: url(img/posters/post7.jpg) rgba(5, 5, 5, 0.616)  center no-repeat; background-size: contain;  height: 80vh;"></div>
+        <div  class="swiper-slide" style="background: url(img/posters/post8.jpg) rgba(5, 5, 5, 0.616)  center no-repeat; background-size: contain;  height: 80vh;"></div>
     </div>
     <!-- Add Pagination -->
     <div class="swiper-pagination"></div>
 </div>
 </div>
+</section>
 
     <!-- Services -->
     <!-- <section class="content-section bg-primary text-white text-center" id="services">
@@ -326,7 +360,7 @@
       </div>
     </footer> -->
 
-<div id="team_cont">
+<div id="team_cont" style="background: rgb(92, 92, 156);">
   <div class="blog-slider">
         <div class="blog-slider__wrp swiper-wrapper">
           <div class="blog-slider__item swiper-slide">
@@ -489,12 +523,22 @@
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script>
     <script>
+
+    $(window).on("load",function() {
+        $("#status").fadeOut();
+        $("#preloader").delay(100).fadeOut("slow",function(){
+          $("body").removeClass('loading');
+        });
+    });
+
+  </script>
+    <script>
       var swiper = new Swiper('.swiper-container', {
       effect: 'cube',
       grabCursor: true,
         autoplay: {
             delay: 2500,
-            disableOnInteraction: false,
+            disableOnInteraction: true,
         },
       cubeEffect: {
         shadow: true,
@@ -505,6 +549,7 @@
       pagination: {
         el: '.swiper-pagination',
       },
+      loop: true
       });
       
       var swiper = new Swiper('.blog-slider', {
