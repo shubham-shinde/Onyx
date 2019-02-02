@@ -14,8 +14,7 @@
 
 #team_cont{
   height: auto;
-  padding-top: 10vh;
-  padding-bottom: 10vh;
+  padding-bottom: 10px;
 }
 .blog-slider {
   width: 95%;
@@ -38,8 +37,6 @@
 @media screen and (max-width: 768px) {
   .blog-slider {
     height: auto;
-    
-    margin: 180px auto;
   }
 }
 @media screen and (max-height: 500px) and (min-width: 992px) {

@@ -17,6 +17,8 @@
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="css/stylish-portfolio.css" rel="stylesheet">
@@ -89,6 +91,14 @@
             height: auto;
         }
     }
+    </style>
+
+  <style>
+    .container > .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+      top: 10px;
+      left: 0;
+      width: 100%;
+  }
     </style>
 
   </head>
@@ -169,9 +179,9 @@
       <div class="container text-center">
         <div class="row">
           <div class="col-lg-10 mx-auto">
-            <h1 style="background: var(--second-bg-color);color: white;">About Onyx</h1>
+            <h1 style="background: var(--second-bg-color);color: white;font-family: 'PT Sans', sans-serif;">About Onyx</h1>
             <p class="lead mb-5">
-              <p class="lead mb-5" id="about_onyx" style="font-weight:400;font-size: 20px; color:rgb(238, 235, 235);letter-spacing: 0px;line-height: 1;background: url(./img/onyxlogo.png) center no-repeat; background-size: contain;">Onyx. No, not the gemstone. Not the Pokemon either!<br/><br/>
+              <p class="lead mb-5" id="about_onyx" style="font-weight:600;font-family:'Dancing Script', cursive ;font-size: 23px; color:rgb(238, 235, 235);letter-spacing: 0px;line-height: 1;background: url(./img/onyxlogo.png) center no-repeat; background-size: contain;">Onyx. No, not the gemstone. Not the Pokemon either!<br/><br/>
                 Onyx stands for the late hours being put up in the midst of exams for an unconventional affair; for some odd twenty year olds coming together for the unorthodox dreams of the maverick in us, for our stubbornness for nothing but the very best, for the offbeat tunes that us zanies dance to. It stands for the people who are putting their heart and soul into this fiesta.<br/><br/> Onyx stands for its throng of audience, for the people looking forward to live up their childhood again amidst this cartoon fiesta, for the punters and winners of the game.<br/><br/> Certainly, it stands for all the literary fanatics, the grammar Nazis, The Lingo freaks. But, more than that, it stands for the vociferous dreamers, the candid ones, the forthright folks. For the voices which refuse to die down. For the pens that won't stop.<br/><br/> Onyx stands for The Galgotias Literary Fest. Avant-garde! See y'll there! 
                 <br/><br/>
             <!-- <a class="btn btn-dark btn-xl js-scroll-trigger" href="#services">Our events</a> -->
@@ -182,25 +192,39 @@
 
 </div>
 
-<section style="background: rgba(99, 112, 172, 0.678)">
+<section style="background: rgba(99, 112, 172, 0.678); padding-top: 20px" id="events">
 <div class="container">
-  <h1>OUT EVENTS</h1>
-<div class="swiper-container">
+  <h1 style="background: var(--second-bg-color);color: white;font-family: 'PT Sans', sans-serif;text-align: center;">Our Events</h1>
+  <div class="swiper-container">
     <div class="swiper-wrapper">
-        <div  class="swiper-slide" style="background: url(img/posters/post1.jpeg) rgba(5, 5, 5, 0.616) center no-repeat; background-size: contain; height: 80vh;"></div>
-        <div  class="swiper-slide" style="background: url(img/posters/post2.jpeg) rgba(5, 5, 5, 0.616)  center no-repeat; background-size: contain;  height: 80vh;"></div>
-        <div  class="swiper-slide" style="background: url(img/posters/post3.jpeg) rgba(5, 5, 5, 0.616)  center no-repeat; background-size: contain;  height: 80vh;"></div>
-        <div  class="swiper-slide" style="background: url(img/posters/post4.jpeg) rgba(5, 5, 5, 0.616)  center no-repeat; background-size: contain;  height: 80vh;"></div>
-        <div  class="swiper-slide" style="background: url(img/posters/post5.jpg) rgba(5, 5, 5, 0.616)  center no-repeat; background-size: contain; height: 80vh;"></div>
-        <div  class="swiper-slide" style="background: url(img/posters/post6.jpg) rgba(5, 5, 5, 0.616)  center no-repeat; background-size: contain;  height: 80vh;"></div>
-        <div  class="swiper-slide" style="background: url(img/posters/post7.jpg) rgba(5, 5, 5, 0.616)  center no-repeat; background-size: contain;  height: 80vh;"></div>
-        <div  class="swiper-slide" style="background: url(img/posters/post8.jpg) rgba(5, 5, 5, 0.616)  center no-repeat; background-size: contain;  height: 80vh;"></div>
+        <div class="swiper-slide" style="height: 80vh;display: flex;flex-direction: column; background-color: rgba(5, 5, 5, 0.616);"><div  style="flex-grow:1;width: 100%;background: url(img/posters/post1.jpeg) center no-repeat; background-size: contain;"></div><a class="btn btn btn-primary" style="width: 300px; margin: 10px" href="#" role="button">Click here for more details</a>
+</div>
+        <div class="swiper-slide"  style="height: 80vh;display: flex;flex-direction: column; background-color: rgba(5, 5, 5, 0.616);"><div  style="flex-grow:1;width: 100%;background: url(img/posters/post2.jpeg)  center no-repeat; background-size: contain;"></div><a class="btn btn btn-primary" style="width: 300px; margin: 10px" href="#" role="button">Click here for more details</a>
+</div>
+        <div class="swiper-slide"  style="height: 80vh;display: flex;flex-direction: column; background-color: rgba(5, 5, 5, 0.616);"><div  style="flex-grow:1;width: 100%;background: url(img/posters/post3.jpeg)  center no-repeat; background-size: contain;"></div><a class="btn btn btn-primary" style="width: 300px; margin: 10px" href="#" role="button">Click here for more details</a>
+</div>
+        <div class="swiper-slide"  style="height: 80vh;display: flex;flex-direction: column; background-color: rgba(5, 5, 5, 0.616);"><div  style="flex-grow:1;width: 100%;background: url(img/posters/post4.jpeg)  center no-repeat; background-size: contain;"></div><a class="btn btn btn-primary" style="width: 300px; margin: 10px" href="#" role="button">Click here for more details</a>
+</div>
+        <div class="swiper-slide" style="height: 80vh;display: flex;flex-direction: column; background-color: rgba(5, 5, 5, 0.616);"><div  style="flex-grow:1;width: 100%;background: url(img/posters/post5.jpg)  center no-repeat; background-size: contain;"></div><a class="btn btn btn-primary" style="width: 300px; margin: 10px" href="#" role="button">Click here for more details</a>
+</div>
+        <div class="swiper-slide"  style="height: 80vh;display: flex;flex-direction: column; background-color: rgba(5, 5, 5, 0.616);"><div  style="flex-grow:1;width: 100%;background: url(img/posters/post6.jpg)  center no-repeat; background-size: contain;"></div><a class="btn btn btn-primary" style="width: 300px; margin: 10px" href="#" role="button">Click here for more details</a>
+</div>
+        <div class="swiper-slide"  style="height: 80vh;display: flex;flex-direction: column; background-color: rgba(5, 5, 5, 0.616);"><div  style="flex-grow:1;width: 100%;background: url(img/posters/post7.jpg)  center no-repeat; background-size: contain;"></div><a class="btn btn btn-primary" style="width: 300px; margin: 10px" href="#" role="button">Click here for more details</a>
+</div>
+        <div class="swiper-slide"  style="height: 80vh;display: flex;flex-direction: column; background-color: rgba(5, 5, 5, 0.616);"><div  style="flex-grow:1;width: 100%;background: url(img/posters/post8.jpeg)  center no-repeat; background-size: contain;"></div><a class="btn btn btn-primary" style="width: 300px; margin: 10px" href="#" role="button">Click here for more details</a>
+</div>
     </div>
     <!-- Add Pagination -->
     <div class="swiper-pagination"></div>
 </div>
 </div>
 </section>
+
+<!-- <section>
+  <div class="container">
+    
+  </div>
+</section> -->
 
     <!-- Services -->
     <!-- <section class="content-section bg-primary text-white text-center" id="services">
@@ -360,7 +384,10 @@
       </div>
     </footer> -->
 
-<div id="team_cont" style="background: rgb(92, 92, 156);">
+<section style="background: rgb(92, 92, 156);padding-top: 20px;">
+  <div class="container">
+    <h1 style="background: var(--second-bg-color);color: white;font-family: 'PT Sans', sans-serif;text-align: center;">Coordinators</h1>
+<div id="team_cont">
   <div class="blog-slider">
         <div class="blog-slider__wrp swiper-wrapper">
           <div class="blog-slider__item swiper-slide">
@@ -482,6 +509,9 @@
         <div class="blog-slider__pagination"></div>
       </div>
     </div>
+  </div>
+
+</section>
   <div class="footer-section">
   
     <div id="map" class="map-section">
@@ -489,14 +519,11 @@
     </div>
   
     <div class="contact-section">
-      <h4>GET IN CONTACT</h4>
+      <h4>CLUB HEADS</h4>
       <hr>
-      <center>
-      <input type="email" name="email" placeholder="Email..."><br>
-      <input type="text" name="subject" placeholder="Subject..."><br>
-      <textarea type="text" name="message" placeholder="Message..."></textarea><br>
-      </center>
-      <button type="button">Submit</button>
+      <div class="container-fluid" style="display:flex;padding:10px;align-items: center;justify-content:space-around"><div style="width: 100px;border-radius: 50%;height: 100px;background: url(./img/heads/1.jpeg) center no-repeat; background-size: contain;"></div><h3 style="color: white;">Vashishta matto</h3></div>
+      <div class="container-fluid" style="display:flex;padding:10px;align-items: center;justify-content:space-around"><div style="width: 100px;border-radius: 50%;height: 100px;background: url(./img/heads/2.jpeg) center no-repeat; background-size: contain;"></div><h3 style="color: white;">Vashishta matto</h3></div>
+      <div class="container-fluid" style="display:flex;padding:10px;align-items: center;justify-content:space-around"><div style="width: 100px;border-radius: 50%;height: 100px;background: url(./img/heads/3.jpeg) center no-repeat; background-size: contain;"></div><h3 style="color: white;">Vashishta matto</h3></div>
       <hr>
       <center>
         <p>Galgotias College of Engineering and Technology</p>
