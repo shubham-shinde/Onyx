@@ -286,6 +286,8 @@ border-right: transparent;
 }
 
 .sidebar-nav > .sidebar-brand a {
+  font-family: 'Dancing script', sans-serif;
+  font-size: 3rem;
   color: #fff;
 }
 
